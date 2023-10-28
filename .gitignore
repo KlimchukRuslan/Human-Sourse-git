@@ -8,7 +8,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-
+target/
 #Property
 database.properties
 
