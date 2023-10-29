@@ -5,25 +5,25 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Главная</title>
+    <title>Family</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/style.css">
 </head>
 <body>
 <div style="text-align: center">
-    <h3>${pageContext.request.userPrincipal.name}</h3>
+    <div style="text-align: center">
+        <h3>${pageContext.request.userPrincipal.name}</h3>
+    </div>
+
     <sec:authorize access="!isAuthenticated()">
-        <h4><a href="/login">Войти</a></h4>
-        <h4><a href="/registration">Зарегистрироваться</a></h4>
+        <h4><a href="/login">Вхід</a></h4>
+        <h4><a href="/registration">Зареєструватись</a></h4>
     </sec:authorize>
-
-    <h4><a href="/news">О давненько не був. А шо ту нового</a></h4>
-    <h4><a href="/my_family/{userId}">Моє дерево</a></h4>
-
     <sec:authorize access="isAuthenticated()">
-        <h4><a href="/logout">Выйти</a></h4>
+        <h4><a href="/logout">Вийти</a></h4>
     </sec:authorize>
-
+    <h4><a href="/news">Добавити учасника дерева(потрібна регістрація)</a></h4>
+    <h4><a href="/">Повернутись на головну сторінку</a></h4>
 </div>
 </body>
 </html>
