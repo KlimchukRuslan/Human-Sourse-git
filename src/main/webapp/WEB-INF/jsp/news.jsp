@@ -9,9 +9,9 @@
     <title>Новости</title>
 </head>
 <body>
-<div>
-    <h2>Новости <br> Только для залогинившихся пользователей.</h2>
-    <a href="/">Главная</a>
+<div style="text-align: center">
+    <h2>Наші новини <br> </h2>
+    <a href="/">Головна сторінка</a>
 </div>
 </body>
 </html>
